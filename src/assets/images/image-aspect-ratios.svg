@@ -1,0 +1,45 @@
+<svg width="500" height="350" viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .aspect-label { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 16px; font-weight: 600; fill: #333; }
+      .ratio-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 12px; fill: #666; }
+      .category-label { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 14px; font-weight: 500; fill: #495057; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="350" fill="#f8f9fa" rx="8"/>
+
+  <!-- Title -->
+  <text x="250" y="25" text-anchor="middle" class="aspect-label">Image Aspect Ratios</text>
+
+  <!-- Photography -->
+  <text x="125" y="50" text-anchor="middle" class="category-label">Photography</text>
+  <rect x="75" y="60" width="100" height="66.67" fill="#28a745" stroke="#1e7e34" stroke-width="2" rx="2"/>
+  <text x="125" y="145" text-anchor="middle" class="aspect-label">3:2</text>
+  <text x="125" y="160" text-anchor="middle" class="ratio-text">35mm Camera</text>
+
+  <!-- Social Media -->
+  <text x="375" y="50" text-anchor="middle" class="category-label">Social Media</text>
+  <rect x="350" y="60" width="50" height="88.89" fill="#dc3545" stroke="#bd2130" stroke-width="2" rx="2"/>
+  <text x="375" y="170" text-anchor="middle" class="aspect-label">9:16</text>
+  <text x="375" y="185" text-anchor="middle" class="ratio-text">Stories</text>
+
+  <!-- Square Format -->
+  <text x="125" y="200" text-anchor="middle" class="category-label">Square</text>
+  <rect x="100" y="210" width="50" height="50" fill="#17a2b8" stroke="#117a8b" stroke-width="2" rx="2"/>
+  <text x="125" y="280" text-anchor="middle" class="aspect-label">1:1</text>
+  <text x="125" y="295" text-anchor="middle" class="ratio-text">Instagram</text>
+
+  <!-- Banner/Web -->
+  <text x="375" y="200" text-anchor="middle" class="category-label">Banner</text>
+  <rect x="325" y="210" width="100" height="25" fill="#ffc107" stroke="#d39e00" stroke-width="2" rx="2"/>
+  <text x="375" y="255" text-anchor="middle" class="aspect-label">4:1</text>
+  <text x="375" y="270" text-anchor="middle" class="ratio-text">Header</text>
+
+  <!-- Print -->
+  <text x="250" y="200" text-anchor="middle" class="category-label">Print</text>
+  <rect x="225" y="210" width="50" height="70.59" fill="#6f42c1" stroke="#563d7c" stroke-width="2" rx="2"/>
+  <text x="250" y="300" text-anchor="middle" class="aspect-label">5:7</text>
+  <text x="250" y="315" text-anchor="middle" class="ratio-text">Portrait</text>
+</svg>

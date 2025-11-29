@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+    {% endif %}
+    <title>{{ page.title | default: site.title }}</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+    <link href="/assets/css/main.css" rel="stylesheet">
+  </head>
+  <body>
+	<div class="site d-flex flex-column min-vh-100">
+		{% include header.html %}
+		<main class="d-flex flex-column flex-grow-1">
+			{{ content }}
+		</main>
+		{% include footer.html %}
+	</div>
+    <script src="/assets/js/bootstrap.bundle.min.js"></script>
+    <script src="/assets/js/lenis.min.js"></script>
+    <script src="/assets/js/scripts.js"></script>
+  </body>
+</html>

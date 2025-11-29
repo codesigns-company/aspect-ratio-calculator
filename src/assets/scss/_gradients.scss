@@ -1,0 +1,89 @@
+// Gradient Masthead Themes
+
+// Original gradient masthead (keeping for backward compatibility)
+.gradient {
+  background-color: var(--bs-body-bg);
+  background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.01), rgba(var(--bs-body-bg-rgb), 1) 85%),
+                    radial-gradient(at left top, rgba(13, 110, 253, 0.5), rgba(0, 0, 0, 0) 50%),
+                    radial-gradient(at right top, rgba(255, 228, 132, 0.5), rgba(0, 0, 0, 0) 50%),
+                    radial-gradient(at right center, rgba(113, 44, 249, 0.5), rgba(0, 0, 0, 0) 50%),
+                    radial-gradient(at left center, rgba(214, 51, 132, 0.5), rgba(0, 0, 0, 0) 50%);
+  transition: background-color 0.3s;
+}
+
+// Ocean Theme - Multi-color ocean tones
+.gradient-ocean {
+  background-color: var(--bs-body-bg);
+  background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.01), rgba(var(--bs-body-bg-rgb), 1) 85%),
+                    radial-gradient(at left top, rgba(0, 123, 255, 0.5), rgba(0, 0, 0, 0) 50%),
+                    radial-gradient(at right top, rgba(0, 204, 255, 0.5), rgba(0, 0, 0, 0) 50%),
+                    radial-gradient(at right center, rgba(75, 192, 192, 0.5), rgba(0, 0, 0, 0) 50%),
+                    radial-gradient(at left center, rgba(0, 51, 160, 0.5), rgba(0, 0, 0, 0) 50%);
+  transition: background-color 0.3s;
+}
+
+// Sunset Theme - Multi-color sunset tones
+.gradient-sunset {
+  background-color: var(--bs-body-bg);
+  background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.01), rgba(var(--bs-body-bg-rgb), 1) 85%),
+                    radial-gradient(at left top, rgba(220, 20, 60, 0.5), rgba(0, 0, 0, 0) 50%),
+                    radial-gradient(at right top, rgba(255, 140, 0, 0.5), rgba(0, 0, 0, 0) 50%),
+                    radial-gradient(at right center, rgba(255, 215, 0, 0.5), rgba(0, 0, 0, 0) 50%),
+                    radial-gradient(at left center, rgba(138, 43, 226, 0.5), rgba(0, 0, 0, 0) 50%);
+  transition: background-color 0.3s;
+}
+
+// Forest Theme - Multi-color forest tones
+.gradient-forest {
+  background-color: var(--bs-body-bg);
+  background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.01), rgba(var(--bs-body-bg-rgb), 1) 85%),
+                    radial-gradient(at left top, rgba(0, 100, 0, 0.5), rgba(0, 0, 0, 0) 50%),
+                    radial-gradient(at right top, rgba(50, 205, 50, 0.5), rgba(0, 0, 0, 0) 50%),
+                    radial-gradient(at right center, rgba(255, 215, 0, 0.5), rgba(0, 0, 0, 0) 50%),
+                    radial-gradient(at left center, rgba(160, 82, 45, 0.5), rgba(0, 0, 0, 0) 50%);
+  transition: background-color 0.3s;
+}
+
+// Monochrome Theme - Multi-color gray tones
+.gradient-mono {
+  background-color: var(--bs-body-bg);
+  background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.01), rgba(var(--bs-body-bg-rgb), 1) 85%),
+                    radial-gradient(at left top, rgba(64, 64, 64, 0.5), rgba(0, 0, 0, 0) 50%),
+                    radial-gradient(at right top, rgba(128, 128, 128, 0.5), rgba(0, 0, 0, 0) 50%),
+                    radial-gradient(at right center, rgba(192, 192, 192, 0.5), rgba(0, 0, 0, 0) 50%),
+                    radial-gradient(at left center, rgba(96, 96, 96, 0.5), rgba(0, 0, 0, 0) 50%);
+  transition: background-color 0.3s;
+}
+
+// Warm Theme - Multi-color warm tones
+.gradient-warm {
+  background-color: var(--bs-body-bg);
+  background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.01), rgba(var(--bs-body-bg-rgb), 1) 85%),
+                    radial-gradient(at left top, rgba(255, 99, 132, 0.5), rgba(0, 0, 0, 0) 50%),
+                    radial-gradient(at right top, rgba(255, 159, 64, 0.5), rgba(0, 0, 0, 0) 50%),
+                    radial-gradient(at right center, rgba(255, 205, 86, 0.5), rgba(0, 0, 0, 0) 50%),
+                    radial-gradient(at left center, rgba(255, 69, 0, 0.5), rgba(0, 0, 0, 0) 50%);
+  transition: background-color 0.3s;
+}
+
+// Cool Theme - Multi-color cool tones
+.gradient-cool {
+  background-color: var(--bs-body-bg);
+  background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.01), rgba(var(--bs-body-bg-rgb), 1) 85%),
+                    radial-gradient(at left top, rgba(54, 162, 235, 0.5), rgba(0, 0, 0, 0) 50%),
+                    radial-gradient(at right top, rgba(75, 192, 192, 0.5), rgba(0, 0, 0, 0) 50%),
+                    radial-gradient(at right center, rgba(153, 102, 255, 0.5), rgba(0, 0, 0, 0) 50%),
+                    radial-gradient(at left center, rgba(201, 203, 207, 0.5), rgba(0, 0, 0, 0) 50%);
+  transition: background-color 0.3s;
+}
+
+// Vibrant Theme - Multi-color vibrant tones
+.gradient-vibrant {
+  background-color: var(--bs-body-bg);
+  background-image: linear-gradient(180deg, rgba(var(--bs-body-bg-rgb), 0.01), rgba(var(--bs-body-bg-rgb), 1) 85%),
+                    radial-gradient(at left top, rgba(255, 20, 147, 0.5), rgba(0, 0, 0, 0) 50%),
+                    radial-gradient(at right top, rgba(255, 165, 0, 0.5), rgba(0, 0, 0, 0) 50%),
+                    radial-gradient(at right center, rgba(50, 205, 50, 0.5), rgba(0, 0, 0, 0) 50%),
+                    radial-gradient(at left center, rgba(138, 43, 226, 0.5), rgba(0, 0, 0, 0) 50%);
+  transition: background-color 0.3s;
+}

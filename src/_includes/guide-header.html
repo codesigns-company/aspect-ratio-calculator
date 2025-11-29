@@ -1,0 +1,16 @@
+{% assign gradient_class = "gradient" %}
+{% if page.banner-gradient %}
+  {% assign gradient_class = gradient_class | append: "-" | append: page.banner-gradient %}
+{% endif %}
+
+<header class="{{ gradient_class }} py-5 bg-body text-body-emphasis">
+	<div class="container-xxl py-5">
+		<div class="col-md-10 mx-auto text-center">
+
+			<h1 class="mb-3 display-3 fw-semibold lh-1">{{ include.title }}</h1>
+
+			<p class="lead mb-4 col-md-10 col-lg-8 mx-auto mb-5">{{ include.description }}</p>
+
+		</div>
+	</div>
+</header>

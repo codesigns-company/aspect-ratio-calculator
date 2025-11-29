@@ -1,0 +1,80 @@
+
+// Import custom gradients
+@use "gradients" as *;
+
+// Import Bootstrap
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+// Custom variables and overrides
+:root,
+[data-bs-theme="light"] {
+  --bs-body-bg: #ffffff;
+  --bs-body-color: #212529;
+  --bs-secondary-bg-rgb: 246, 248, 250;
+  --bs-secondary-bg: #f6f8fa;
+  --bs-tertiary-bg-rgb: 248, 249, 250;
+  --bs-tertiary-bg: #f8f9fa;
+}
+
+[data-bs-theme="dark"] {
+  --bs-border-color: #30363d;
+  --bs-dark-bg-subtle: #161b22;
+  --bs-dark-bg-subtle-rgb: 22, 27, 34;
+
+  --bs-body-bg-rgb: 0, 0, 0;
+  --bs-body-bg: #000000;
+
+  --bs-secondary-bg-rgb: 22, 27, 34;
+  --bs-secondary-bg: #161b22;
+
+  --bs-tertiary-bg-rgb: 13, 17, 23;
+  --bs-tertiary-bg: #0d1117;
+  --bs-body-color: #ffffff;
+}
+
+.navbar {
+  box-shadow: 0 .5rem 1rem #00000026, inset 0 -1px #ffffff26;
+}
+
+// Theme dropdown styling
+.dropdown-item.active {
+  background-color: rgba(13, 110, 253, 0.1);
+}
+
+.dropdown-item:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.theme-dropdown-item {
+  list-style: none;
+}
+
+// Ensure dropdown caret stays white
+.dropdown-toggle::after {
+  color: #ffffff !important;
+}
+
+// Custom button styles for better contrast
+.btn-outline-primary {
+  --bs-btn-color: var(--bs-body-color);
+  --bs-btn-border-color: var(--bs-body-color);
+  --bs-btn-hover-color: var(--bs-body-bg);
+  --bs-btn-hover-bg: var(--bs-body-color);
+  --bs-btn-hover-border-color: var(--bs-body-color);
+  --bs-btn-focus-shadow-rgb: var(--bs-body-color-rgb, 33, 37, 41);
+  --bs-btn-active-color: var(--bs-body-bg);
+  --bs-btn-active-bg: var(--bs-body-color);
+  --bs-btn-active-border-color: var(--bs-body-color);
+}
+
+// Accessibility: Respect prefers-reduced-motion
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

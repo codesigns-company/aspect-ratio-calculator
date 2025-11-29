@@ -1,0 +1,43 @@
+<svg width="500" height="350" viewBox="0 0 500 350" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .aspect-label { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 16px; font-weight: 600; fill: #333; }
+      .ratio-text { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 12px; fill: #666; }
+      .category-label { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-size: 14px; font-weight: 500; fill: #495057; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect width="500" height="350" fill="#f8f9fa" rx="8"/>
+
+  <!-- Title -->
+  <text x="250" y="25" text-anchor="middle" class="aspect-label">Video Aspect Ratios</text>
+
+  <!-- Traditional Video -->
+  <text x="125" y="50" text-anchor="middle" class="category-label">Traditional</text>
+  <rect x="75" y="60" width="100" height="75" fill="#6c757d" stroke="#495057" stroke-width="2" rx="2"/>
+  <text x="125" y="155" text-anchor="middle" class="aspect-label">4:3</text>
+  <text x="125" y="170" text-anchor="middle" class="ratio-text">Standard TV</text>
+
+  <!-- Modern Video -->
+  <text x="375" y="50" text-anchor="middle" class="category-label">Modern</text>
+  <rect x="325" y="60" width="100" height="56.25" fill="#007bff" stroke="#0056b3" stroke-width="2" rx="2"/>
+  <text x="375" y="135" text-anchor="middle" class="aspect-label">16:9</text>
+  <text x="375" y="150" text-anchor="middle" class="ratio-text">HD Video</text>
+
+  <!-- Mobile Video -->
+  <text x="125" y="200" text-anchor="middle" class="category-label">Mobile</text>
+  <rect x="100" y="210" width="50" height="88.89" fill="#dc3545" stroke="#bd2130" stroke-width="2" rx="2"/>
+  <text x="125" y="320" text-anchor="middle" class="aspect-label">9:16</text>
+  <text x="125" y="335" text-anchor="middle" class="ratio-text">Vertical Video</text>
+
+  <!-- Cinema Video -->
+  <text x="375" y="200" text-anchor="middle" class="category-label">Cinema</text>
+  <rect x="325" y="210" width="100" height="42.55" fill="#6f42c1" stroke="#563d7c" stroke-width="2" rx="2"/>
+  <text x="375" y="275" text-anchor="middle" class="aspect-label">21:9</text>
+  <text x="375" y="290" text-anchor="middle" class="ratio-text">Ultra-wide</text>
+
+  <!-- Connecting lines -->
+  <line x1="175" y1="112.5" x2="325" y2="112.5" stroke="#adb5bd" stroke-width="1" stroke-dasharray="5,5"/>
+  <line x1="175" y1="254.45" x2="325" y2="254.45" stroke="#adb5bd" stroke-width="1" stroke-dasharray="5,5"/>
+</svg>

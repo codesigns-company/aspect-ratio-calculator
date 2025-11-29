@@ -1,0 +1,35 @@
+<div class="row g-3">
+	<div class="col-12">
+		<label for="ratio" class="form-label fs-5">Select Aspect Ratio</label>
+		<select class="form-select form-select-lg rounded-3" id="ratio">
+			<option value="16:9" selected>16:9 - HD Video</option>
+			<option value="4:3">4:3 - Standard Monitor</option>
+			<option value="3:2">3:2 - Classic Film</option>
+			<option value="21:9">21:9 - Cinemascope</option>
+			<option value="9:16">9:16 - Video Reels</option>
+			<option value="custom">Custom</option>
+		</select>
+	</div>
+</div>
+
+<div class="row g-3 mt-3">
+	<div class="col-md-6">
+		<label for="ratio_w" class="form-label fs-5">Width (Ratio):</label>
+		<input type="number" class="form-control form-control-lg rounded-3" id="ratio_w" min="1" value="16" disabled>
+	</div>
+	<div class="col-md-6">
+		<label for="ratio_h" class="form-label fs-5">Height (Ratio):</label>
+		<input type="number" class="form-control form-control-lg rounded-3" id="ratio_h" min="1" value="9" disabled>
+	</div>
+</div>
+
+<div class="row g-3 mt-3">
+	<div class="col-md-6">
+		<label for="pixel_w" class="form-label fs-5">Width (Pixels):</label>
+		<input type="number" class="form-control form-control-lg rounded-3" id="pixel_w" min="1" value="1280">
+	</div>
+	<div class="col-md-6">
+		<label for="pixel_h" class="form-label fs-5">Height (Pixels):</label>
+		<input type="number" class="form-control form-control-lg rounded-3" id="pixel_h" min="1">
+	</div>
+</div>

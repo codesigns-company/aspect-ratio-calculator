@@ -1,0 +1,29 @@
+{
+  "name": "pixel-calc",
+  "version": "1.0.0",
+  "description": "Pixel Aspect Ratio Calculator - A comprehensive tool for calculating aspect ratios and pixel dimensions",
+  "main": "index.html",
+  "scripts": {
+    "build-css": "sass --style=compressed src/assets/scss/main.scss src/assets/css/main.css",
+    "watch-css": "sass --watch --style=expanded src/assets/scss/main.scss src/assets/css/main.css",
+    "build": "npm run build-css",
+    "dev": "npm run watch-css"
+  },
+  "keywords": [
+    "aspect-ratio",
+    "calculator",
+    "pixel",
+    "dimensions",
+    "bootstrap",
+    "sass"
+  ],
+  "author": "Pixel Calculator",
+  "license": "MIT",
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "lenis": "^1.3.15"
+  },
+  "devDependencies": {
+    "sass": "^1.69.5"
+  }
+}
