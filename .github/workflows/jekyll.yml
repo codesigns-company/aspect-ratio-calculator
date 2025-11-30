@@ -25,7 +25,7 @@ jobs:
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: '3.1'
-        bundler-cache: true
+        bundler: '2.4.22'
 
     - name: Install Ruby dependencies
       run: bundle install
