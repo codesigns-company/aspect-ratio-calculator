@@ -1,9 +1,25 @@
+// Import Bootstrap with custom font family
+@use "../../../node_modules/bootstrap/scss/bootstrap" with (
+  $font-family-base: ('Mona Sans', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif)
+);
 
 // Import custom gradients
 @use "gradients" as *;
 
-// Import Bootstrap
-@import "../../../node_modules/bootstrap/scss/bootstrap";
+// Font face for Mona Sans
+@font-face {
+  font-family: 'Mona Sans';
+  src: url('../fonts/MonaSansVF-wght-opsz.woff2') format('woff2-variations'),
+       url('../fonts/MonaSansVF-wght-opsz.woff') format('woff-variations');
+  font-weight: 200 900;
+  font-optical-sizing: auto;
+  font-display: swap;
+  size-adjust: 110%;
+  ascent-override: 90%;
+  descent-override: 22%;
+  line-gap-override: 0%;
+}
+
 
 // Custom variables and overrides
 :root,
@@ -65,6 +81,45 @@
   --bs-btn-active-color: var(--bs-body-bg);
   --bs-btn-active-bg: var(--bs-body-color);
   --bs-btn-active-border-color: var(--bs-body-color);
+}
+
+// Custom nav pills for header
+.nav-pills .nav-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  color: #ffffff;
+  margin: 0 5px;
+  transition: all 0.3s;
+  padding: 0.5rem 1rem;
+}
+
+.nav-pills .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+}
+
+// Theme button pill style
+.navbar-nav .btn {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  border-radius: 20px !important;
+  color: #ffffff !important;
+  margin: 0 5px !important;
+  transition: all 0.3s !important;
+  padding: 0.5rem 1rem !important;
+}
+
+.navbar-nav .btn:hover {
+  background-color: rgba(255, 255, 255, 0.2) !important;
+  color: #ffffff !important;
 }
 
 // Accessibility: Respect prefers-reduced-motion
