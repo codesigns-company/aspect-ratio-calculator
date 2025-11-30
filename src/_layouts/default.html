@@ -7,8 +7,8 @@
     <meta name="description" content="{{ page.description }}">
     {% endif %}
     <title>{{ page.title | default: site.title }}</title>
-    <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-    <link href="/assets/css/main.css" rel="stylesheet">
+    <link rel="icon" href="{{ site.baseurl }}/favicon.svg" type="image/svg+xml">
+    <link href="{{ site.baseurl }}/assets/css/main.css" rel="stylesheet">
   </head>
   <body>
 	<div class="site d-flex flex-column min-vh-100">
@@ -18,8 +18,8 @@
 		</main>
 		{% include footer.html %}
 	</div>
-    <script src="/assets/js/bootstrap.bundle.min.js" defer></script>
-    <script src="/assets/js/lenis.min.js" defer></script>
-    <script src="/assets/js/scripts.js" defer></script>
+    <script src="{{ site.baseurl }}/assets/js/bootstrap.bundle.min.js" defer></script>
+    <script src="{{ site.baseurl }}/assets/js/lenis.min.js" defer></script>
+    <script src="{{ site.baseurl }}/assets/js/scripts.js" defer></script>
   </body>
 </html>

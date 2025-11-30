@@ -5,7 +5,7 @@ baseurl: ""
 
 # Build settings
 source: src
-destination: _site
+destination: web
 markdown: kramdown
 highlighter: rouge
 theme: minima
