@@ -109,44 +109,6 @@
   transition: background-color 0.3s;
 }
 
-// 16x9 Border Gradient - 2px blue gradient border
-.border-gradient-16x9 {
-  background: linear-gradient(to right, #64B5F6, #4DD0E1) !important;
-  border-radius: 1rem !important;
-  padding: 1px !important;
-  box-shadow: none !important;
-}
-
-.border-gradient-16x9 .card-body {
-  background: var(--bs-card-bg);
-  border-radius: 0.95rem;
-}
-
-// 4x3 Border Gradient - 2px green gradient border
-.border-gradient-4x3 {
-  background: linear-gradient(to right, #81C784, #FFF59D) !important;
-  border-radius: 1rem !important;
-  padding: 1px !important;
-  box-shadow: none !important;
-}
-
-.border-gradient-4x3 .card-body {
-  background: var(--bs-card-bg);
-  border-radius: 0.95rem;
-}
-
-// 9x16 Border Gradient - 2px red gradient border
-.border-gradient-9x16 {
-  background: linear-gradient(to right, #EF5350, #FFAB91) !important;
-  border-radius: 1rem !important;
-  padding: 1px !important;
-  box-shadow: none !important;
-}
-
-.border-gradient-9x16 .card-body {
-  background: var(--bs-card-bg);
-  border-radius: 0.95rem;
-}
 
 // 9x16 Aspect Ratio Theme - Red gradient
 .gradient-9x16 {
