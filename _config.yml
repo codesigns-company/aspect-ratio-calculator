@@ -9,6 +9,7 @@ destination: web
 markdown: kramdown
 highlighter: rouge
 theme: minima
+keep_files: [assets]
 
 # Plugins
 plugins:

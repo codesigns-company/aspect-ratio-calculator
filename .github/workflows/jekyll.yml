@@ -50,8 +50,17 @@ jobs:
         echo "Jekyll version: $(bundle exec jekyll --version)"
         echo "Ruby version: $(ruby --version)"
         bundle exec jekyll build --trace --verbose
+        echo "Contents of web/assets after Jekyll build:"
+        ls -la web/assets/ || echo "web/assets does not exist"
       env:
         JEKYLL_ENV: production
+
+    - name: Ensure assets are copied
+      run: |
+        mkdir -p web/assets
+        cp -r src/assets/* web/assets/ || echo "Failed to copy assets"
+        echo "Final contents of web/assets:"
+        ls -la web/assets/
 
     - name: Upload artifact
       uses: actions/upload-pages-artifact@v3
