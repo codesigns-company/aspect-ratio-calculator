@@ -40,7 +40,10 @@ jobs:
       run: npm ci
 
     - name: Build CSS
-      run: npm run build-css
+      run: |
+        npm run build
+        echo "CSS file size: $(wc -c < src/assets/css/main.css) bytes"
+        ls -la src/assets/css/
 
     - name: Build with Jekyll
       run: |
