@@ -1,6 +1,7 @@
-title: Pixel Calculator
+title: Pixel Ratios
 description: Aspect ratio calculators for various formats
 url: http://localhost:4000
+# https://pixelratios.com
 baseurl: ""
 
 # Build settings
