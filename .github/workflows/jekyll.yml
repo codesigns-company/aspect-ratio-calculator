@@ -24,7 +24,7 @@ jobs:
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1
       with:
-        ruby-version: '3.1'
+        ruby-version: '3.2'
         bundler: '2.4.22'
 
     - name: Install Ruby dependencies
@@ -43,7 +43,10 @@ jobs:
       run: npm run build-css
 
     - name: Build with Jekyll
-      run: bundle exec jekyll build --trace
+      run: |
+        echo "Jekyll version: $(bundle exec jekyll --version)"
+        echo "Ruby version: $(ruby --version)"
+        bundle exec jekyll build --trace --verbose
       env:
         JEKYLL_ENV: production
 
