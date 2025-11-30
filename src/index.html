@@ -6,7 +6,6 @@ description: Professional aspect ratio calculator for digital creators. Instantl
 
 {% include calculator-header.html title="Pixel Aspect Ratio Calculator" description="Transform any dimension into perfectly proportioned measurements. Whether you're designing graphics, editing footage, or optimizing layouts, get exact pixel calculations that maintain visual integrity across all your projects." calculator="main-calc.html" %}
 
-<!-- Hero Section -->
 <section class="bg-body text-white py-5">
   <div class="container">
     <div class="row align-items-center">
@@ -53,7 +52,6 @@ description: Professional aspect ratio calculator for digital creators. Instantl
 
 <hr class="container">
 
-<!-- Quick Access Section -->
 <section class="py-5 bg-body">
   <div class="container">
     <div class="row text-center">
@@ -96,7 +94,6 @@ description: Professional aspect ratio calculator for digital creators. Instantl
 
 <hr class="container">
 
-<!-- Hero Section -->
 <section class="bg-body text-white py-5">
 	<div class="container">
 		<div class="row align-items-center">
@@ -111,31 +108,46 @@ description: Professional aspect ratio calculator for digital creators. Instantl
 			</div>
 			
 			<div class="col-lg-8">
-				<h2 class="fw-semibold mb-3">Why Proportions Matter in Digital Design</h2>
-				<p class="mb-4">Master the fundamentals of aspect ratios with our precision calculator. From HD video to mobile content, ensure your designs maintain perfect proportions across all platforms.</p>
+				<h2 class="fw-semibold mb-3">Deepen Your Knowledge</h2>
+				<p class="mb-4">Understanding aspect ratios is key to professional design. Explore our comprehensive guides to master proportional thinking.</p>
 
 				<div class="row g-3">
 					<div class="col-md-4">
-						<div class="text-center">
-							<i class="d-block bi bi-calculator text-primary display-4 mb-4"></i>
-							<h3 class="h6">Precise Calculations</h3>
-							<p class="small text-body text-opacity-75">Error-free measurements for professional results</p>
-						</div>
+
+						<a href="{{ site.baseurl }}/aspect-ratio/" class="text-decoration-none">
+							<div class="card border-0 shadow-sm h-100 text-center p-4 hover-lift">
+								<i class="bi bi-aspect-ratio text-body display-4 mb-3"></i>
+								<h3 class="h6">Aspect Ratio Guide</h3>
+								<p class="text-body text-opacity-75 small">For social media and vertical content</p>
+							</div>
+						</a>
+
 					</div>
+
 					<div class="col-md-4">
-						<div class="text-center">
-							<i class="d-block bi bi-display text-success display-4 mb-4"></i>
-							<h3 class="h6">Flexible Format Support</h3>
-							<p class="small text-body text-opacity-75">Standard and custom ratios for all your needs</p>
-						</div>
+
+						<a href="{{ site.baseurl }}/image-aspect-ratio/" class="text-decoration-none">
+							<div class="card border-0 shadow-sm h-100 text-center p-4 hover-lift">
+								<i class="bi bi-card-image text-body display-4 mb-3"></i>
+								<h3 class="h6">Image Aspect Ratio</h3>
+								<p class="text-body text-opacity-75 small">For social media and vertical content</p>
+							</div>
+						</a>
+
 					</div>
+
 					<div class="col-md-4">
-						<div class="text-center">
-							<i class="d-block bi bi-lightning text-warning display-4 mb-4"></i>
-							<h3 class="h6">Instant Results</h3>
-							<p class="small text-body text-opacity-75">Real-time calculations as you type</p>
-						</div>
+
+						<a href="{{ site.baseurl }}/video-aspect-ratio/" class="text-decoration-none">
+							<div class="card border-0 shadow-sm h-100 text-center p-4 hover-lift">
+								<i class="bi bi-camera-video text-body display-4 mb-3"></i>
+								<h3 class="h6">Video Aspect Ratio</h3>
+								<p class="text-body text-opacity-75 small">For social media and vertical content</p>
+							</div>
+						</a>
+
 					</div>
+
 				</div>
 
 			</div>
@@ -144,115 +156,4 @@ description: Professional aspect ratio calculator for digital creators. Instantl
 	</div>
 </section>
 
-<!-- Learning Hub Section -->
-<section class="py-5">
-  <div class="container">
-
-    <div class="row align-items-center">
-      <div class="col-lg-6">
-        <h2 class="fw-semibold mb-3">Deepen Your Knowledge</h2>
-        <p class="text-body text-opacity-75 mb-4">Understanding aspect ratios is key to professional design. Explore our comprehensive guides to master proportional thinking.</p>
-        <div class="d-grid gap-3 d-md-flex">
-          <a href="{{ site.baseurl }}/aspect-ratio/" class="btn btn-primary btn-lg">Aspect Ratio Fundamentals</a>
-          <a href="{{ site.baseurl }}/image-aspect-ratio/" class="btn btn-outline-primary btn-lg">Visual Media Guide</a>
-          <a href="{{ site.baseurl }}/video-aspect-ratio/" class="btn btn-outline-primary btn-lg">Video Production Guide</a>
-        </div>
-      </div>
-      <div class="col-lg-6">
-        <div class="text-center">
-          <div class="ratio ratio-16x9 bg-light rounded">
-            <!-- Placeholder for aspect ratio visualization -->
-            <div class="d-flex align-items-center justify-content-center h-100">
-              <i class="bi bi-aspect-ratio text-primary display-1"></i>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<script>
-    class AspectRatioCalculator {
-        constructor() {
-            this.ratios = {
-                '16:9': [16, 9],
-                '4:3': [4, 3],
-                '3:2': [3, 2],
-                '21:9': [21, 9],
-                '9:16': [9, 16],
-                'custom': [null, null]
-            };
-
-            // Cache DOM elements
-            this.elements = {
-                ratio: document.getElementById('ratio'),
-                ratioW: document.getElementById('ratio_w'),
-                ratioH: document.getElementById('ratio_h'),
-                pixelW: document.getElementById('pixel_w'),
-                pixelH: document.getElementById('pixel_h')
-            };
-
-            this.init();
-        }
-
-        init() {
-            // Bind events
-            this.elements.ratio.addEventListener('change', () => this.updateRatio());
-            this.elements.ratioW.addEventListener('input', (e) => this.updatePixels(e));
-            this.elements.ratioH.addEventListener('input', (e) => this.updatePixels(e));
-            this.elements.pixelW.addEventListener('input', (e) => this.updatePixels(e));
-            this.elements.pixelH.addEventListener('input', (e) => this.updatePixels(e));
-
-            // Initial setup
-            this.updateRatio();
-        }
-
-        updateRatio() {
-            const val = this.elements.ratio.value;
-            const { ratioW, ratioH, pixelW, pixelH } = this.elements;
-
-            if (val === 'custom') {
-                ratioW.disabled = false;
-                ratioH.disabled = false;
-            } else {
-                ratioW.disabled = true;
-                ratioH.disabled = true;
-                [ratioW.value, ratioH.value] = this.ratios[val];
-
-                // Set default width based on ratio
-                pixelW.value = val === '9:16' ? 1080 : 1280;
-            }
-
-            this.calculateHeight();
-        }
-
-        updatePixels(event) {
-            const target = event.target;
-            const { ratioW, ratioH, pixelW, pixelH } = this.elements;
-
-            if (target === pixelH) {
-                this.calculateWidth();
-            } else {
-                this.calculateHeight();
-            }
-        }
-
-        calculateHeight() {
-            const rw = parseInt(this.elements.ratioW.value) || 1;
-            const rh = parseInt(this.elements.ratioH.value) || 1;
-            const calcH = this.elements.pixelW.value * (rh / rw);
-            this.elements.pixelH.value = Math.round(calcH);
-        }
-
-        calculateWidth() {
-            const rw = parseInt(this.elements.ratioW.value) || 1;
-            const rh = parseInt(this.elements.ratioH.value) || 1;
-            const calcW = this.elements.pixelH.value * (rw / rh);
-            this.elements.pixelW.value = Math.round(calcW);
-        }
-    }
-
-    // Initialize calculator
-    new AspectRatioCalculator();
-</script>
+<script src="{{ site.baseurl }}/assets/js/calculate-ratios.js" defer></script>
