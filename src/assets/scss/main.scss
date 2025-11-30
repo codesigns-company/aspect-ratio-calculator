@@ -86,6 +86,29 @@
   --bs-btn-active-border-color: var(--bs-body-color);
 }
 
+// Custom nav pills for header
+.nav-pills .nav-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  color: #ffffff;
+  margin: 0 5px;
+  transition: all 0.3s;
+  padding: 0.5rem 1rem;
+}
+
+.nav-pills .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.nav-pills .nav-link.active {
+  background-color: #ffffff;
+  color: #000000;
+  border-color: #ffffff;
+}
+
 // Custom hover effects
 .hover-lift {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
