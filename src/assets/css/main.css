@@ -12045,4 +12045,23 @@ textarea.form-control-lg {
   }
 }
 
+/* Custom styles for new homepage layouts */
+.bg-gradient-primary {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+}
+
+.hover-lift {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.hover-lift:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15) !important;
+}
+
+.hover-bg-light:hover {
+  background-color: #f8f9fa !important;
+  transition: background-color 0.3s ease;
+}
+
 /*# sourceMappingURL=main.css.map */
