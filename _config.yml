@@ -1,7 +1,7 @@
 title: Pixel Ratios
 description: Aspect ratio calculators for various formats
-url: "https://codesigns-company.github.io"
-baseurl: "/aspect-ratio-calculator"
+url: "https://pixelratios.com"
+baseurl: ""
 
 # Build settings
 source: src
