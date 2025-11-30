@@ -17,3 +17,9 @@ class RatioCalculator {
         this.pixelH.value = Math.ceil(calcH);
     }
 }
+
+// Auto-initialize if ratio is set
+if (window.initCalculatorRatio) {
+    const [w, h] = window.initCalculatorRatio.split(',').map(Number);
+    new RatioCalculator(w, h);
+}
