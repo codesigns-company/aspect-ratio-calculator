@@ -136,6 +136,12 @@
   top: 6px;
 }
 
+// Enhanced focus indicators for accessibility
+*:focus-visible {
+  outline: 3px solid #007bff;
+  outline-offset: 2px;
+}
+
 // Theme button pill style
 .navbar-nav .btn {
   background-color: rgba(255, 255, 255, 0.1) !important;
@@ -152,7 +158,7 @@
   color: #ffffff !important;
 }
 
-// Accessibility: Respect prefers-reduced-motion
+// Respect prefers-reduced-motion
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
