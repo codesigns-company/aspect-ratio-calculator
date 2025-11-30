@@ -116,3 +116,36 @@
   background-image: linear-gradient(to right, #EF5350, #FFAB91);
   transition: background-color 0.3s;
 }
+
+// Button gradients to match the site's aesthetic
+.btn-gradient {
+  background: linear-gradient(135deg, rgba(13, 110, 253, 0.9), rgba(113, 44, 249, 0.9));
+  border: 1px solid rgba(13, 110, 253, 0.6);
+  color: white;
+  transition: all 0.3s ease;
+  &:hover {
+    background: linear-gradient(135deg, rgba(13, 110, 253, 1), rgba(113, 44, 249, 1));
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(13, 110, 253, 0.3);
+    color: white;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(13, 110, 253, 0.25);
+  }
+}
+
+.btn-gradient-cool {
+  background: linear-gradient(135deg, rgba(54, 162, 235, 0.9), rgba(75, 192, 192, 0.9));
+  border: 1px solid rgba(54, 162, 235, 0.6);
+  color: white;
+  transition: all 0.3s ease;
+  &:hover {
+    background: linear-gradient(135deg, rgba(54, 162, 235, 1), rgba(75, 192, 192, 1));
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(54, 162, 235, 0.3);
+    color: white;
+  }
+  &:focus {
+    box-shadow: 0 0 0 0.2rem rgba(54, 162, 235, 0.25);
+  }
+}
