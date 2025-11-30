@@ -18,8 +18,8 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
+    - name: Checkout
+      uses: actions/checkout@v4
 
     - name: Setup Ruby
       uses: ruby/setup-ruby@v1
@@ -39,21 +39,21 @@ jobs:
         node-version: '18'
         cache: 'npm'
 
-      - name: Install dependencies
-        run: npm ci
+    - name: Install dependencies
+      run: npm ci
 
-      - name: Build CSS
-        run: npm run build-css
+    - name: Build CSS
+      run: npm run build-css
 
-      - name: Build with Jekyll
-        run: bundle exec jekyll build --trace
-        env:
-          JEKYLL_ENV: production
+    - name: Build with Jekyll
+      run: bundle exec jekyll build --trace
+      env:
+        JEKYLL_ENV: production
 
-      - name: Upload artifact
-        uses: actions/upload-pages-artifact@v3
-        with:
-          path: ./web
+    - name: Upload artifact
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: ./web
 
   deploy:
     environment:
