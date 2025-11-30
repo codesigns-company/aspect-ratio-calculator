@@ -96,11 +96,11 @@ banner-gradient: cool
                 <div class="card-body p-5">
                     <h2 class="fw-semibold mb-4"><i class="bi bi-scissors me-2"></i>Resizing and Cropping Images</h2>
                     <p>Adjusting an image's aspect ratio is straightforward with modern tools. Follow these steps:</p>
-                    <ol class="list-group list-group-numbered">
-                        <li class="list-group-item bg-transparent border-0"><i class="bi bi-1-circle text-primary me-2"></i>Identify your target platform and check its preferred ratio using our reference table</li>
-                        <li class="list-group-item bg-transparent border-0"><i class="bi bi-2-circle text-primary me-2"></i>Use our <a href="/" class="text-decoration-none">photo ratio calculator</a> to calculate the exact pixel dimensions needed</li>
-                        <li class="list-group-item bg-transparent border-0"><i class="bi bi-3-circle text-primary me-2"></i>Open your image in editing software and crop to the new dimensions, ensuring key elements remain visible</li>
-                    </ol>
+                    <ul class="list-group">
+                        <li class="list-group-item bg-transparent border-0"><i class="bi bi-1-circle text-body me-2"></i>Identify your target platform and check its preferred ratio using our reference table</li>
+                        <li class="list-group-item bg-transparent border-0"><i class="bi bi-2-circle text-body me-2"></i>Use our <a href="/" class="text-decoration-none">photo ratio calculator</a> to calculate the exact pixel dimensions needed</li>
+                        <li class="list-group-item bg-transparent border-0"><i class="bi bi-3-circle text-body me-2"></i>Open your image in editing software and crop to the new dimensions, ensuring key elements remain visible</li>
+                    </ul>
                     <p>Taking time to properly size your images ensures they appear polished and professional across all your social channels.</p>
                 </div>
             </div>
@@ -109,11 +109,7 @@ banner-gradient: cool
                 <div class="card-body p-5">
                     <h2 class="fw-semibold mb-4">Start Optimizing Your Images</h2>
                     <p>Get the perfect dimensions for any platform with our calculators.</p>
-                    <div class="d-flex justify-content-center gap-3 flex-wrap">
-                        <a href="/16x9-calculator/" class="btn btn-primary btn-lg">16:9 Calculator</a>
-                        <a href="/4x3-calculator/" class="btn btn-secondary btn-lg">4:3 Calculator</a>
-                        <a href="/9x16-calculator/" class="btn btn-success btn-lg">9:16 Calculator</a>
-                    </div>
+					{% include calc-links.html %}
                 </div>
             </div>
             
